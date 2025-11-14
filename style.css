@@ -23,11 +23,13 @@ nav {
     position: fixed;
 }
 
-nav > .logo {
+.logo {
+    margin: 5px;
+}
+
+.logo img {
     width: 35px;
     height: 40px;
-    margin-top: 5px;
-    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -57,6 +59,40 @@ nav > .bar {
 
 
 /* Page principale */
+
+/* Animations */
+
+button:hover {
+    scale: 1.1;
+    transition: all 0.3s;
+}
+
+.product-photo:hover { /* <--- J'ai piqué ça à Emery */
+    transform: rotate(10deg);
+    transition: all 0.3s;
+}
+
+.cadre:hover {
+    scale: 1.05;
+    transition: all 0.3s;
+}
+
+.cakeList p:hover {
+    color:#933C24;
+    scale: 1.05;
+    transition: all 0.3s;
+}
+
+.gateaux img:hover {
+    scale: 1.05;
+    transition: all 0.3s;
+}
+
+.product:hover {
+    scale: 1.05;
+    transition: all 0.3s;
+    color: #933C24;
+}
 
 /* Order */
 
@@ -102,11 +138,6 @@ nav > .bar {
     background-color: #933C24;
     color: #FFFFFF;
     font-weight: 600;
-}
-
-.orderButton:hover {
-    scale: 1.1;
-    transition: transform 1s;
 }
 
 .produits > h2 {
