@@ -1,0 +1,111 @@
+/* Responsive tablette */
+
+@media (min-width: 768px) {
+
+    body {
+        margin: 0;
+    }
+
+    /* Barre de navigation */
+
+    nav {
+        display: none;
+    }
+
+    nav .logo {
+        display: block;
+    }
+
+    .home {
+        background-image: url("img/home2.png");
+    }
+
+    /*  Grille de Produits */
+
+    .cadres {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cadre {
+        flex-direction: column;
+        justify-content: center; 
+        gap: 20px;         
+        padding: 0 40px; 
+
+        flex-grow: 1;
+    }
+
+
+    .reduction {
+        background-image: url("img/reduction_bg_2.png");
+    }
+
+    /*  Section Découvrir  */
+    .gateaux {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .gateaux img {
+        width: auto; 
+        max-width: 30%; 
+        flex-grow: 1;   
+    }
+
+    .about {
+        background-image: url("img/about_2.png");
+    }
+
+    /*  Section Petits Plaisirs  */
+    .pleasuresList {
+        flex-direction: row;
+        justify-content: space-around; 
+        align-items: flex-start; 
+    }
+
+    .product {
+        width: 30%;
+    }
+
+    .product img {
+        width: 100%; 
+    }
+
+    .desc {
+        width: 100%;
+    }
+}
+
+/* Responsible ordinateur */
+
+@media (min-width: 1024px) {
+
+
+    /*  Pied de page */
+
+    .social img {
+        gap: 5px;
+    }
+
+    .footer-content-wrapper {
+        flex-direction: row; 
+        justify-content: space-around; 
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .footerBlock {
+        text-align: left; 
+    }
+
+    .footerBlock h2 {
+        text-align: left;
+    }
+    
+    .content, .nouveautes {
+        margin-left: 0; 
+    }
+}

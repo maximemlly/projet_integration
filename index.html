@@ -6,6 +6,7 @@
     <title>Keithson - Coffee Shop</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +15,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <!-- Barre de navigation avec le logo et le menu burger -->
         <nav>
             <img class="logo" src="img/logo2.png" alt="Logo Keithson">
+
+            <div class="nav-links">
+                <a href="#">Accueil</a>
+                <a href="#">Produits</a>
+                <a href="#">À propos</a>
+                <a href="#">Contact</a>
+            </div>
+
             <img class="bar" src="img/side_bar.png" alt="Icône menu">
         </nav>
     </header>
@@ -39,105 +53,107 @@
         <section class="produits">
             <h2>Nos Tops Produits</h2>
 
-            <!-- Chaque div contient la photo du produit, son nom et son prix -->
-            <div class="cadre painComplet">
-                <img class="product-photo" src="img/pain_complet.png" alt="Pain complet">
-    
-                <div class="product-details">
-            
-                    <div class="details-top">
-                        <p class="price">40€</p>
-                        <img class="i" src="img/i.svg" alt="Plus d'informations">
-                    </div>
-            
-                    <div class="details-bottom">
-                        <p class="nom">Pain complet</p>
-                        <button class="addToCart">Ajouter</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cadre feuilletee">
-                <img class="product-photo" src="img/feuillete.png" alt="Pâtisserie feuilletée">
-    
-                <div class="product-details">
-            
-                    <div class="details-top">
-                        <p class="price">40€</p>
-                        <img class="i" src="img/i.svg" alt="Plus d'informations">
-                    </div>
-            
-                    <div class="details-bottom">
-                        <p class="nom">Patisserie feuilletée</p>
-                        <button class="addToCart">Ajouter</button>
+            <div class="cadres">
+                <!-- Chaque div contient la photo du produit, son nom et son prix -->
+                <div class="cadre painComplet">
+                    <img class="product-photo" src="img/pain_complet.png" alt="Pain complet">
+        
+                    <div class="product-details">
+                
+                        <div class="details-top">
+                            <p class="price">40€</p>
+                            <img class="i" src="img/i.svg" alt="Plus d'informations">
+                        </div>
+                
+                        <div class="details-bottom">
+                            <p class="nom">Pain complet</p>
+                            <button class="addToCart">Ajouter</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="cadre campagne">
-                <img class="product-photo" src="img/baguette_campagne.png" alt="Baguette de campagne">
-    
-                <div class="product-details">
-            
-                    <div class="details-top">
-                        <p class="price">40€</p>
-                        <img class="i" src="img/i.svg" alt="Plus d'informations">
-                    </div>
-            
-                    <div class="details-bottom">
-                        <p class="nom">Baguette de campagne</p>
-                        <button class="addToCart">Ajouter</button>
+                <div class="cadre feuilletee">
+                    <img class="product-photo" src="img/feuillete.png" alt="Pâtisserie feuilletée">
+        
+                    <div class="product-details">
+                
+                        <div class="details-top">
+                            <p class="price">40€</p>
+                            <img class="i" src="img/i.svg" alt="Plus d'informations">
+                        </div>
+                
+                        <div class="details-bottom">
+                            <p class="nom">Patisserie feuilletée</p>
+                            <button class="addToCart">Ajouter</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="cadre pain_blanc">
-                <img class="product-photo" src="img/miche.png" alt="Miche de pain blanc">
-    
-                <div class="product-details">
-            
-                    <div class="details-top">
-                        <p class="price">40€</p>
-                        <img class="i" src="img/i.svg" alt="Plus d'informations">
-                    </div>
-            
-                    <div class="details-bottom">
-                        <p class="nom">Miche de pain blanc</p>
-                        <button class="addToCart">Ajouter</button>
+                <div class="cadre campagne">
+                    <img class="product-photo" src="img/baguette_campagne.png" alt="Baguette de campagne">
+        
+                    <div class="product-details">
+                
+                        <div class="details-top">
+                            <p class="price">40€</p>
+                            <img class="i" src="img/i.svg" alt="Plus d'informations">
+                        </div>
+                
+                        <div class="details-bottom">
+                            <p class="nom">Baguette de campagne</p>
+                            <button class="addToCart">Ajouter</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="cadre gateau">
-                <img class="product-photo" src="img/gateau.png" alt="Gâteau pâte feuilletée">
-    
-                <div class="product-details">
-            
-                    <div class="details-top">
-                        <p class="price">40€</p>
-                        <img class="i" src="img/i.svg" alt="Plus d'informations">
-                    </div>
-            
-                    <div class="details-bottom">
-                        <p class="nom">Gâteau pâte feuilletée</p>
-                        <button class="addToCart">Ajouter</button>
+                <div class="cadre pain_blanc">
+                    <img class="product-photo" src="img/miche.png" alt="Miche de pain blanc">
+        
+                    <div class="product-details">
+                
+                        <div class="details-top">
+                            <p class="price">40€</p>
+                            <img class="i" src="img/i.svg" alt="Plus d'informations">
+                        </div>
+                
+                        <div class="details-bottom">
+                            <p class="nom">Miche de pain blanc</p>
+                            <button class="addToCart">Ajouter</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="cadre miche_complet">
-                <img class="product-photo" src="img/mcihe_complet.png" alt="Miche de pain complet">
-    
-                <div class="product-details">
-            
-                    <div class="details-top">
-                        <p class="price">40€</p>
-                        <img class="i" src="img/i.svg" alt="Plus d'informations">
+                <div class="cadre gateau">
+                    <img class="product-photo" src="img/gateau.png" alt="Gâteau pâte feuilletée">
+        
+                    <div class="product-details">
+                
+                        <div class="details-top">
+                            <p class="price">40€</p>
+                            <img class="i" src="img/i.svg" alt="Plus d'informations">
+                        </div>
+                
+                        <div class="details-bottom">
+                            <p class="nom">Gâteau pâte feuilletée</p>
+                            <button class="addToCart">Ajouter</button>
+                        </div>
                     </div>
-            
-                    <div class="details-bottom">
-                        <p class="nom">Miche de pain complet</p>
-                        <button class="addToCart">Ajouter</button>
+                </div>
+
+                <div class="cadre miche_complet">
+                    <img class="product-photo" src="img/mcihe_complet.png" alt="Miche de pain complet">
+        
+                    <div class="product-details">
+                
+                        <div class="details-top">
+                            <p class="price">40€</p>
+                            <img class="i" src="img/i.svg" alt="Plus d'informations">
+                        </div>
+                
+                        <div class="details-bottom">
+                            <p class="nom">Miche de pain complet</p>
+                            <button class="addToCart">Ajouter</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -229,51 +245,56 @@
             </div>
         </section>
 
-        <!-- Liste des contacts du café -->
-        <section class="aPropos footerBlock">
-            <h2>A propos</h2>
-            <div class="content">
-                <p>02 38 00 00 00</p>
-                <p>bakery@coda.school</p>
-                <p>24 Rue Jeanne d'Arc</p>
-                <p>45000 Orléans</p>
-            </div>
-        </section>
+        <!-- Rassemblement des sections du footer pour permettre l'affichage côte à côte sur ordinateur -->
+        <div class="footer-content-wrapper">
 
-        <!-- Bloc "explorer" pour permettre au client de retrouver toutes les pages du site -->
-        <section class="explore footerBlock">
-            <h2>Explorer</h2>
-            <div class="content">
-                <p>Accueil</p>
-                <p>Blog</p>
-                <p>Contact</p>
-                <p>Services</p>
-            </div>
-
-        </section>
-
-        <!-- Actualités du site -->
-        <section class="acutalites footerBlock">
-            <h2>Actualité</h2>
-            <div class="nouveautes">
-                <div class="nouveau infos">
-                    <img src="img/nouveau_delice.png" alt="Nouveau délice">
-                    <div class="text">
-                        <p class="date">14 juin 2024</p>
-                        <p class="productName">Nouveau délice</p>
-                    </div>
-
+            <!-- Liste des contacts du café -->
+            <section class="aPropos footerBlock">
+                <h2>A propos</h2>
+                <div class="content">
+                    <p>02 38 00 00 00</p>
+                    <p>bakery@coda.school</p>
+                    <p>24 Rue Jeanne d'Arc</p>
+                    <p>45000 Orléans</p>
                 </div>
-                <div class="raisin infos">
-                    <img src="img/pain_raisin.png" alt="Pain au raisin">
-                    <div class="text">
-                        <p class="date">14 juin 2024</p>
-                        <p class="productName">Pain au raisin</p>
+            </section>
+
+            <!-- Bloc "explorer" pour permettre au client de retrouver toutes les pages du site -->
+            <section class="explore footerBlock">
+                <h2>Explorer</h2>
+                <div class="content">
+                    <p>Accueil</p>
+                    <p>Blog</p>
+                    <p>Contact</p>
+                    <p>Services</p>
+                </div>
+
+            </section>
+
+            <!-- Actualités du site -->
+            <section class="acutalites footerBlock">
+                <h2>Actualité</h2>
+                <div class="nouveautes">
+                    <div class="nouveau infos">
+                        <img src="img/nouveau_delice.png" alt="Nouveau délice">
+                        <div class="text">
+                            <p class="date">14 juin 2024</p>
+                            <p class="productName">Nouveau délice</p>
+                        </div>
+
+                    </div>
+                    <div class="raisin infos">
+                        <img src="img/pain_raisin.png" alt="Pain au raisin">
+                        <div class="text">
+                            <p class="date">14 juin 2024</p>
+                            <p class="productName">Pain au raisin</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
+            </section>
+
+        </div>
 
         <!-- Copyright du site -->
         <div class="copyright">
